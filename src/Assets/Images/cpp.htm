@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Learn Programming | C++ | CodeChef</title>
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TV5X2M');</script>
+        <!-- End Google Tag Manager -->
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-WFQ23G3"></script><meta property="og:url" content="https://www.codechef.com/learn/cpp" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Learn Programming | C++ | CodeChef" />
+<meta property="og:image" content="https://cdn.codechef.com/sites/all/themes/abessive/cc-logo.png" />
+<meta property="og:description" content="Learn Programming | C++ | CodeChef" />
+<meta property="fb:app_id" content="191217060453" />
+<meta name='robots' content='index, follow' /><link rel='canonical' href='https://www.codechef.com/learn/cpp'><script>window.csrfToken = 'b800a665e2eb21b44c03a1836f06f3e668c292aa14a314b3823875d3a8154873';</script><meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' href='/sites/all/themes/mallow/css/mallow.css?v=bd93fa0def6643984a8287b8d7ab38e0'><script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='/sites/all/themes/mallow/js/mallow.min.js?v=1e4b162dab1b6cde55342b1bc20ba3fb'></script>
+<script src='/em/libs/common/common.js?v=90e62af60811f3b3f517bfcd9a986d55'></script>
+<script src='/misc/drupal.js'></script><script src='/em/libs/cryptojs/aes.js'></script><script src='/sites/all/themes/mallow/js/todo.min.js?v=3c7dcdaea2f8fb977e77802f9ef8595f'></script>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Roboto+Mono:wght@100;300;400;500;700&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">    <meta charset="utf-8">
+    <script src='/sites/all/modules/codechef_common_functions/js/codechefGenericModal.js'></script>
+    <script src='/sites/all/modules/codechef_common_functions/codechef_common_functions.js?v=
+    14a693cb7b4d17e526c6987eaad20e73'></script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"visitedContests":[],"username":null,"user_consented_privacy_policy_version":null,"user_consented_privacy_policy_on":null,"current_privacy_policy_version":"9719286"});
+//--><!]]>
+</script>
+    <script src='/sites/all/modules/codechef_alerts/codechef_alerts.js?v=649c43b6894169b33b5557aa0374459d'></script>
+    <link rel='stylesheet' type='text/css' href='/misc/jquery-popup-overlay/popupoverlay.css'>
+    <link rel='stylesheet' type='text/css' href='/sites/all/themes/abessive/css/modal.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    </head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV5X2M"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) --><header class="m-header-one l-main-header ">
+    <div class="l-header">
+        <div class="l-header__logo">
+            <div class="l-header__image-2">
+                <a href="https://www.codechef.com">
+                    <img class="m-header__image m-header__image--pc"
+                         src="https://cdn.codechef.com/images/cc-logo.svg"
+                         alt="CodeChef Logo">
+                    <img class="m-header__image m-header__image--mobile"
+                         src="https://cdn.codechef.com/images/cc-logo-mobile-1.svg"
+                         alt="CodeChef Logo">
+                </a>
+            </div>
+        </div>
+        <div class="headerRightContainer">
+            <div class="desktopNavigation">
+                <div class="headerNavigation">
+                    <div class="navigationRow">
+                         <a class="navigationItem" href="/learn?itm_medium=navmenu&itm_campaign=learncp">
+                            <span class="navigationLink">Learn</span>
+                         </a>
+                         <a class="navigationItem" href="/practice?itm_medium=navmenu&itm_campaign=practice">
+                            <span class="navigationLink">Practice</span>
+                         </a>
+                         <a class="navigationItem" href="/contests?itm_medium=navmenu&itm_campaign=allcontests">
+                            <span class="navigationLink">Compete</span>
+                         </a>             
+                    </div>
+                </div>            </div>
+            <div class="l-header__user-block">
+                <a class="m-premium-text-container" href="/pro?itm_medium=header-mallow&itm_campaign=CC_Pro" target="_blank">
+                <i class="i-premium-icon"></i>
+                <span class="m-premium-text">Upgrade to Pro</span>
+            </a>
+            <hr class="m-divider--vertical">
+            <div class="m-login-container--desktop">
+                <button class="m-login-button-no-border" onclick="window.open('https://www.codechef.com/login?destination=/learn/cpp', '_self')">Login</button><button class="m-signup-button" 
+                    onclick="window.open('https://www.codechef.com/signup?destination=/learn/cpp', '_self')">Sign Up</button>
+            </div>
+            <div class="m-login-container--mobile">
+                <button class="m-login-button" onclick="window.open('https://www.codechef.com/login?destination=/learn/cpp', '_self')">Login / Sign Up</button>
+            </div>            </div>
+        </div>
+    </div>
+</header>
+<div class="">
+    <div class="mobileNavigation">
+        <div class="headerNavigation">
+                    <div class="navigationRow">
+                         <a class="navigationItem" href="/learn?itm_medium=navmenu&itm_campaign=learncp">
+                            <span class="navigationLink">Learn</span>
+                         </a>
+                         <a class="navigationItem" href="/practice?itm_medium=navmenu&itm_campaign=practice">
+                            <span class="navigationLink">Practice</span>
+                         </a>
+                         <a class="navigationItem" href="/contests?itm_medium=navmenu&itm_campaign=allcontests">
+                            <span class="navigationLink">Compete</span>
+                         </a>             
+                    </div>
+                </div>    </div>
+</div>
+<div id="node-9718519" class="node clear-block">
+
+  <div class="meta">
+  
+    </div>
+
+  <div class="content">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-color: #3185FC;
+        --primary-color-shade: #3F6DD4;
+        --primary-color-tint: #83B6FD;
+
+
+        --text-primary-light: #263238;
+        --text-secondary-light: #546e7a;
+        --text-meta-light: #90a4ae;
+        --text-body-light: #757575;
+
+        --bg-color-grey: #D0D5D6;
+        --bg-color-grey-2: #F1F6Fa;
+
+        --bg-color-green: #428c22;
+        --bg-color-blue: #3185FC;
+
+        --shadow-color-blue: #83B6FD66;
+        --shadow-color-card: rgba(18 44 52 / 8%);
+
+        --gradient-blue: #143565;
+        --gradient-black: #000428;
+
+        --gradient-banner-light: #659AD2;
+        --gradient-banner-dark: #00294e;
+        --card-color: #004482;
+
+        --color-progress-green: #428c22;
+    }
+
+    .mobileNavigation {
+        display: none !important;
+    }
+
+    .l-card-13 img {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .l-banner__header .m-para {
+        font-weight: 400;
+        color: #fff;
+        opacity: 0.86;
+    }
+
+
+    .l-card {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        opacity: 0;
+        border: none;
+        border-radius: 8px !important;
+        max-width: 640px !important;
+        padding: 0;
+        transform: translateY(16px);
+        transition: all 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+    }
+
+    .l-card.show {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    .l-card__button {
+        padding: 12px 24px;
+        height: auto;
+        background: #fff;
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        border-radius: 4px;
+        margin-top: 32px;
+        cursor: pointer;
+        transition: all .25s ease-in-out;
+    }
+
+    .l-card__button:hover {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    .m-head__4 {
+        margin-top: 24px;
+        font-size: 21px !important;
+        font-weight: 600 !important;
+    }
+
+    .m-card-inactive:hover .m-card-lock-icon {
+        display: none;
+    }
+
+    .m-card-inactive:hover .content_card {
+        transition: all 400ms ease-out;
+        display: block !important;
+    }
+
+
+    .l-card.coming-soon *:is(.m-card__para, .m-card-info) {
+        filter: blur(4px);
+    }
+
+    .l-card__button.coming-soon {
+        background-color: var(--bg-color-grey-2);
+        border: 1px solid var(--bg-color-grey-2);
+        color: var(--text-body-light);
+        cursor: not-allowed;
+    }
+
+    .l-card__button.coming-soon:hover {
+        background-color: var(--bg-color-grey-2);
+        border: 1px solid var(--bg-color-grey-2);
+        color: var(--text-body-light);
+    }
+
+    .l-padding-bottom-64 {
+        padding-bottom: 64px !important;
+    }
+
+    .m-card-total-progress {
+        font-size: 14px;
+        color: #757575;
+    }
+
+
+    .lesson-type {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: 85%;
+    }
+
+
+    .m-head__4 {
+        margin-bottom: 16px !important;
+    }
+
+    .m-head__4__big {
+        font-size: 20px !important;;
+    }
+
+    .l-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .m-card__para {
+        margin: 0 !important;
+        font-size: 14px !important;
+        color: #616161;
+        line-height: 160%;
+        padding-right: 0px !important;
+    }
+
+    .m-progress-bar-container {
+        margin-top: 20px;
+    }
+
+    .m-head__4__big {
+        font-size: 28px !important;
+    }
+
+    .m-card-progress {
+        padding: 4px 16px;
+        color: var(--bg-color-green);
+        font-family: 'Open Sans' !important;
+        letter-spacing: 0.25px;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        line-height: 160% !important;
+    }
+
+    .m-card-progress[data-value="0"] {
+        border: none;
+        background-color: #fff;
+        color: var(--text-meta-light);
+    }
+
+    .m-progress-bar {
+        margin-top: 4px;
+        height: 10px;
+        background: #E5E5E5;
+        border-radius: 36px;
+        flex: 1;
+    }
+
+
+    .head-container {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    .m-head__4 {
+        font-size: 32px !important;
+    }
+
+    .m-card__button {
+        box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+        text-transform: none;
+        padding: 10px 0 !important;
+        width: 161px !important;
+        text-align: center;
+        font-size: 14px;
+        color: white;
+        background: #3185FC;
+        letter-spacing: .5px !important;
+    }
+
+    .m-card__button:hover {
+        box-shadow: none !important;
+    }
+
+    .module-button {
+        margin-top: 12px;
+        text-transform: none;
+        padding: 5px 10px !important;
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        background: white;
+        width: 160px;
+    }
+
+    .module-button:hover {
+        background: var(--primary-color);
+    }
+
+    .module-button:hover .material-icons-outlined {
+        color: white !important;
+    }
+
+    .l-left-card {
+        width: 55%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .circle-wrap {
+        width: 50px;
+        height: 50px;
+        background: #eeeeee;
+        border-radius: 50%;
+    }
+
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .circle-wrap .circle .mask {
+        clip: rect(0px, 50px, 50px, 25px);
+    }
+
+    .mask .fill {
+        clip: rect(0px, 25px, 50px, 0px);
+        background-color: var(--color-progress-green);
+    }
+
+    .mask.full,
+    .circle .fill {
+        animation: fill ease-in-out 3s;
+        transform: rotate(var(--progress-deg));
+    }
+
+    .m-head__7 {
+        font-weight: 600;
+    }
+
+    @keyframes fill {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(var(--progress-deg));
+        }
+    }
+
+
+    .l-card-modules {
+        margin-bottom: 16px;
+        max-width: 730px;
+        background: #FAFAFA;
+        flex-direction: revert;
+        gap: 20px;
+        border: 1px solid #B0BEC5;
+    }
+
+    .l-card-modules-head {
+        width: 88%;
+        margin-top: 0;
+        margin-bottom: 4px;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    .card-main-head {
+        font-weight: 600;
+        font-size: 20px;
+        color: #455A64;
+        margin-bottom: 12px;
+    }
+
+    .m-head__7 {
+        font-weight: 600;
+    }
+
+    .inner-container {
+        display: flex;
+        margin-bottom: 12px;
+        align-items: center;
+    }
+
+    .inner-container:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .l-right-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .m-card-row {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .l-main-card-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .l-list__divider {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .para-3 {
+        font-size: 14px;
+        font-weight: 400;
+        color: #616161;
+        line-height: 160%;
+    }
+
+    .module-link {
+        color: #4391ab !important;
+    }
+
+    .module-link:hover {
+        text-decoration: underline;
+    }
+
+    .para-3__bold {
+        font-weight: 600;
+    }
+
+    .m-card-up-info {
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 36px;
+    }
+
+    .m-card-number {
+        width: 40px;
+        height: 40px;
+        margin: 5px 0 0 5px;
+        border: 4px solid #fafafa;
+        position: absolute;
+        background: #c3e1fb;
+        border-radius: 28px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .m-card-number span.done {
+        font-size: 24px;
+        color: #fff !important;
+        margin: 0;
+    }
+
+    .module-right-card {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+
+    .module-right-left {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .m-collapse-button {
+        gap: 20px;
+        padding: 20px 24px;
+    }
+
+    .inner-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .flex-end {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .flag-container {
+        display: flex;
+        justify-content: end;
+        margin-left: 16px;
+    }
+
+    .is-collapsible {
+        padding-bottom: 20px;
+        margin: 1px;
+        opacity: 1;
+        max-height: fit-content;
+        transition: all 0.3s ease-in-out
+    }
+
+    .l-footer, .m-header-one, #m-codechef-nav, #gdpr-cookie-notif {
+        display: none !important;
+    }
+
+    .is-collapsed {
+        display: block;
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .material-icons-outlined {
+        margin-right: 4px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #3185FC;
+        vertical-align: middle;
+    }
+
+    .inner-container .material-icons-outlined {
+        padding: 4px;
+        border: 1px solid var(--bg-color-grey);
+        border-radius: 360px;
+    }
+
+    .back-button-container {
+        width: fit-content;
+        display: flex;
+        align-items: baseline;
+        cursor: pointer;
+        color: #2a67b1;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+
+    .back-button-container p {
+        font-size: 14px;
+    }
+
+    .back-button-container .icon-container {
+        margin-right: 4px;
+    }
+
+    .back-button-container:hover {
+        text-decoration: underline;
+    }
+
+    .back-button-container:hover .icon-container {
+        margin-left: -2px;
+        margin-right: 6px;
+    }
+
+    .back-button {
+        border: 1px solid #74a3e4;
+        border-radius: 50%;
+        padding: 1px;
+        font-size: 12px;
+    }
+
+    .check-icon {
+        padding: 4px 5px;
+        border: 1px solid var(--bg-color-grey);
+        border-radius: 360px;
+        font-size: 17px;
+        color: #428c22;
+        margin-right: 4px;
+    }
+
+    .resume-icon {
+        margin-right: 4px;
+        font-size: 15px !important;
+        color: #f8cc25 !important;
+
+    }
+
+    .m-module-icon {
+        display: inline-block;
+        background: url('https://cdn.codechef.com/images/self-learning/module-icon.svg') no-repeat 0 0;
+        width: 26px;
+        height: 26px;
+    }
+
+    .m-beginner-icon {
+        display: inline-block;
+        background: url('https://cdn.codechef.com/images/self-learning/begginer-icon.svg') no-repeat 0 0;
+        width: 26px;
+        height: 26px;
+    }
+
+    .m-badge-icon {
+        display: inline-block;
+        background: url('https://cdn.codechef.com/images/self-learning/badge-icon.svg') no-repeat 0 0;
+        width: 26px;
+        height: 26px;
+    }
+
+    .m-flag-icon {
+        display: inline-block;
+        background: url('https://cdn.codechef.com/images/self-learning/flag-icon.svg') no-repeat 0 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .i-learn-cpp {
+        background: url('https://cdn.codechef.com/images/self-learning/cpp1.svg') no-repeat 0 0;
+        width: 50px;
+        height: 50px;
+    }
+
+    @media all and (max-width: 1024px) {
+        .l-card-modules {
+            max-width: 630px !important;
+        }
+    }
+
+    @media all and (max-width: 880px) {
+
+        .m-card__head {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+    }
+
+    @media all and (max-width: 800px) {
+
+        .m-progress-bar-container {
+            width: 100%;
+        }
+
+        .l-main-card-container {
+            flex-direction: column;
+            gap: 35px;
+            margin-bottom: 30px;
+        }
+
+        .l-left-card {
+            width: auto !important;
+        }
+
+        .m-progress-bar-container {
+            width: 100%;
+        }
+
+    }
+
+    @media all and (max-width: 500px) {
+        .m-head__4__big {
+            font-size: 20px !important;;
+        }
+
+        .lesson-type {
+            gap: 20px !important;
+            width: 95%;
+        }
+    }
+
+    @media all and (max-width: 400px) {
+        .flex-end {
+            justify-content: normal !important;
+        }
+
+        .padding-right-0 {
+            padding-right: 0px !important;
+        }
+    }
+</style>
+<section class="l-section">
+                <div class="l-row l-row--1024">
+                    <a class="back-button-container" href="https://www.codechef.com/learn/dashboard">
+                        <div class="icon-container"> 
+                            <span class="material-icons-outlined back-button">
+                                    arrow_back
+                            </span> 
+                         </div>
+                         <p>Back to learn</p>
+                    </a>
+                    <div class="l-main-card-container">
+                        <div class="l-left-card m-card show">
+                            <div class="head-container">
+                                <i class="i-learn-cpp"></i>
+                                <h3 class="m-head__4">Learn C++</h3>
+                            </div>
+                            <p class="m-card__para">
+                            Join this interactive and hands-on C++ course to master the basic syntax of the language. Get practical experience and boost your coding skills as you write programs with real world applications.
+                            </p><a class="m-card__button l-card__button" href="https://codechef.com/learn/BC00LP00/problems/SYN1">Start My Journey</a>
+                    <div class="m-progress-bar-container">
+                         <div style="display: flex;">
+                            <div class="m-progress-bar">
+                                <div style="background: var(--color-progress-green); border-radius: 36px;height:10px;width:0%">
+                                </div>
+                            </div>
+                                            <span class="flag-container"><i class="m-flag-icon"></i></span>
+                         </div>
+                       
+                        <div class="m-card-up-info"><div class="m-card-total-progress" style="color: #6E6E6E !important">Please <a class="m-breadcrumb__link" style="color: red" href="https://www.codechef.com/login?destination=learn/python">login</a> to see the progress</div></div></div>
+                                        <hr class="l-list__divider">
+                                        </div>
+                                        <div class="l-right-card">
+                                            <div class="m-card-row">
+                                                <i class="m-module-icon"></i>
+                                                <p class="para-3">7 Modules</p>
+                                            </div>
+                                            <hr class="l-list__divider">
+                                            <div class="m-card-row">
+                                                <i class="m-beginner-icon"></i>
+                                                <p class="para-3">Beginner Friendly</p>
+                                            </div>
+                                            <hr class="l-list__divider">
+                                            <div class="m-card-row">
+                                                <i class="m-beginner-icon"></i>
+                                                <div>
+                                                    <p class="para-3 para-3__bold">Avg time to complete</p>
+                                                    <p class="para-3 l-margin-top-2">Approx 7 - 10 hours</p>
+                                                </div>
+                                            </div>
+                                            <hr class="l-list__divider">
+                                            <div class="m-card-row">
+                                                <i class="m-badge-icon"></i>
+                                                <div>
+                                                    <p class="para-3 para-3__bold">You will be able to<br></p>
+                                                    <p class="para-3 l-margin-top-2">Understand syntax and operators<br>
+                                                        Read simple programs written in C++.</br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            <div class="l-row--800"><div class="l-row--800 l-margin-top-28" >
+<h3 class="card-main-head">Syllabus</h3> <div><div class="l-card l-card-modules">
+                <div class="l-collapse-container">  
+                    <div class="m-collapse-button">
+                    <div class="circle-wrap">
+                        <div class="circle" style="--progress-deg: 0deg" data-value="0">
+                                <div class="mask full">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="m-card-number"><span>1</span></div>
+                </div> 
+                </div>
+                <div class="inner-card-container">
+                    <div class="module-right-left">
+                        <h4 class="m-head__7 l-card-modules-head">Outputting & Math Operators</h4>
+                        <i class="l-collapse-icon-layout i-collapse-down"></i>
+                    </div>
+                    <div class="module-right-card">
+                            <div>
+                            <p class="m-card__para padding-right-0">Learn about displaying various outputs and performing arithmetic operations.</p>
+                        </div>
+                    </div><div class="flex-end">
+                <a class="module-button l-card__button" href="https://codechef.com/learn/BC00LP00/problems/SYN1" >
+                                        <span class="material-icons-outlined">play_arrow</span>Start Learning</a></div></div></div>
+                        <div class="is-collapsible l-card-6 l-section--white l-margin-bottom-0 is-collapsed"><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Write your first code.</p>
+                                </div>
+                            </div><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Generate output in C++</p>
+                                </div>
+                            </div><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Basic math</p>
+                                </div>
+                            </div></div></div></div> <div><div class="l-card l-card-modules">
+                <div class="l-collapse-container">  
+                    <div class="m-collapse-button">
+                    <div class="circle-wrap">
+                        <div class="circle" style="--progress-deg: 0deg" data-value="0">
+                                <div class="mask full">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="m-card-number"><span>2</span></div>
+                </div> 
+                </div>
+                <div class="inner-card-container">
+                    <div class="module-right-left">
+                        <h4 class="m-head__7 l-card-modules-head">Variables and Data types </h4>
+                        <i class="l-collapse-icon-layout i-collapse-down"></i>
+                    </div>
+                    <div class="module-right-card">
+                            <div>
+                            <p class="m-card__para padding-right-0">Learn about the concept of variables and different data types</p>
+                        </div>
+                    </div><div class="flex-end">
+                <a class="module-button l-card__button" href="https://codechef.com/learn/BC00LP01/problems/VAD1" >
+                                        <span class="material-icons-outlined">play_arrow</span>Start Learning</a></div></div></div>
+                        <div class="is-collapsible l-card-6 l-section--white l-margin-bottom-0 is-collapsed"><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Variables and their properties</p>
+                                </div>
+                            </div><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Solve simple problems using variables</p>
+                                </div>
+                            </div><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Data types</p>
+                                </div>
+                            </div></div></div></div> <div><div class="l-card l-card-modules">
+                <div class="l-collapse-container">  
+                    <div class="m-collapse-button">
+                    <div class="circle-wrap">
+                        <div class="circle" style="--progress-deg: 0deg" data-value="0">
+                                <div class="mask full">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="m-card-number"><span>3</span></div>
+                </div> 
+                </div>
+                <div class="inner-card-container">
+                    <div class="module-right-left">
+                        <h4 class="m-head__7 l-card-modules-head">Strings</h4>
+                        <i class="l-collapse-icon-layout i-collapse-down"></i>
+                    </div>
+                    <div class="module-right-card">
+                            <div>
+                            <p class="m-card__para padding-right-0">Learn about Strings in C++</p>
+                        </div>
+                    </div><div class="flex-end">
+                <a class="module-button l-card__button" href="https://codechef.com/learn/BC00LP02/problems/STR1" >
+                                        <span class="material-icons-outlined">play_arrow</span>Start Learning</a></div></div></div>
+                        <div class="is-collapsible l-card-6 l-section--white l-margin-bottom-0 is-collapsed"><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Simple String manipulation</p>
+                                </div>
+                            </div></div></div></div> <div><div class="l-card l-card-modules">
+                <div class="l-collapse-container">  
+                    <div class="m-collapse-button">
+                    <div class="circle-wrap">
+                        <div class="circle" style="--progress-deg: 0deg" data-value="0">
+                                <div class="mask full">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="m-card-number"><span>4</span></div>
+                </div> 
+                </div>
+                <div class="inner-card-container">
+                    <div class="module-right-left">
+                        <h4 class="m-head__7 l-card-modules-head">User Input</h4>
+                        <i class="l-collapse-icon-layout i-collapse-down"></i>
+                    </div>
+                    <div class="module-right-card">
+                            <div>
+                            <p class="m-card__para padding-right-0">Learn about taking input from the user and building custom programs.</p>
+                        </div>
+                    </div><div class="flex-end">
+                <a class="module-button l-card__button" href="https://codechef.com/learn/BC00LP03/problems/USR1" >
+                                        <span class="material-icons-outlined">play_arrow</span>Start Learning</a></div></div></div>
+                        <div class="is-collapsible l-card-6 l-section--white l-margin-bottom-0 is-collapsed"><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Simple problems based on user inputs</p>
+                                </div>
+                            </div></div></div></div> <div><div class="l-card l-card-modules">
+                <div class="l-collapse-container">  
+                    <div class="m-collapse-button">
+                    <div class="circle-wrap">
+                        <div class="circle" style="--progress-deg: 0deg" data-value="0">
+                                <div class="mask full">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="m-card-number"><span>5</span></div>
+                </div> 
+                </div>
+                <div class="inner-card-container">
+                    <div class="module-right-left">
+                        <h4 class="m-head__7 l-card-modules-head">Conditional Statements</h4>
+                        <i class="l-collapse-icon-layout i-collapse-down"></i>
+                    </div>
+                    <div class="module-right-card">
+                            <div>
+                            <p class="m-card__para padding-right-0">Learn about the concept of logical and conditional operations in C++.</p>
+                        </div>
+                    </div><div class="flex-end">
+                <a class="module-button l-card__button" href="https://codechef.com/learn/BC00LP04/problems/CND1" >
+                                        <span class="material-icons-outlined">play_arrow</span>Start Learning</a></div></div></div>
+                        <div class="is-collapsible l-card-6 l-section--white l-margin-bottom-0 is-collapsed"><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Solve problems using if / else / elif statements</p>
+                                </div>
+                            </div><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Solve problems using and / or statements</p>
+                                </div>
+                            </div></div></div></div> <div><div class="l-card l-card-modules">
+                <div class="l-collapse-container">  
+                    <div class="m-collapse-button">
+                    <div class="circle-wrap">
+                        <div class="circle" style="--progress-deg: 0deg" data-value="0">
+                                <div class="mask full">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="m-card-number"><span>6</span></div>
+                </div> 
+                </div>
+                <div class="inner-card-container">
+                    <div class="module-right-left">
+                        <h4 class="m-head__7 l-card-modules-head">Arrays</h4>
+                        <i class="l-collapse-icon-layout i-collapse-down"></i>
+                    </div>
+                    <div class="module-right-card">
+                            <div>
+                            <p class="m-card__para padding-right-0">Learn about creating arrays.</p>
+                        </div>
+                    </div><div class="flex-end">
+                <a class="module-button l-card__button" href="https://codechef.com/learn/BC00LP05/problems/ARRY1" >
+                                        <span class="material-icons-outlined">play_arrow</span>Start Learning</a></div></div></div>
+                        <div class="is-collapsible l-card-6 l-section--white l-margin-bottom-0 is-collapsed"><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Basic array operations</p>
+                                </div>
+                            </div></div></div></div> <div><div class="l-card l-card-modules">
+                <div class="l-collapse-container">  
+                    <div class="m-collapse-button">
+                    <div class="circle-wrap">
+                        <div class="circle" style="--progress-deg: 0deg" data-value="0">
+                                <div class="mask full">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="m-card-number"><span>7</span></div>
+                </div> 
+                </div>
+                <div class="inner-card-container">
+                    <div class="module-right-left">
+                        <h4 class="m-head__7 l-card-modules-head">Loops</h4>
+                        <i class="l-collapse-icon-layout i-collapse-down"></i>
+                    </div>
+                    <div class="module-right-card">
+                            <div>
+                            <p class="m-card__para padding-right-0">Learn about the concept of loops and their uses.</p>
+                        </div>
+                    </div><div class="flex-end">
+                <a class="module-button l-card__button" href="https://codechef.com/learn/BC00LP06/problems/LOOP1" >
+                                        <span class="material-icons-outlined">play_arrow</span>Start Learning</a></div></div></div>
+                        <div class="is-collapsible l-card-6 l-section--white l-margin-bottom-0 is-collapsed"><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Introduction to For & While Loops</p>
+                                </div>
+                            </div><div class="inner-container">
+                                <span class="material-icons-outlined">library_books</span>
+                                <div class="lesson-type" style="margin-left: 10px">
+                                    <div class="para-3" style="width: 18%">Lesson</div>
+                                    <p class="para-3">Simple problems using loops</p>
+                                </div>
+                            </div></div></div></div></div></div></section><script>
+    const observer = new IntersectionObserver(enteries => {
+        enteries.forEach(entry => {
+            entry.target.classList.toggle('show', entry.isIntersecting);
+            if (entry.isIntersecting) observer.unobserve(entry.target)
+        }, {
+            threshold: 1
+        });
+    });
+
+    const cards = document.querySelectorAll('.l-card');
+
+    cards.forEach(card => {
+        observer.observe(card);
+    })
+</script>  </div>
+
+  </div>
+<footer class="l-footer">
+            <div class="l-footer__content m-footer__content">
+                <div class='l-footer__links'><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>Programming Tools</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='https://www.codechef.com/ide' class='m-footer__link'>Online IDE</a></div><div class='l-footer__link'><a href='https://www.codechef.com/contests#future-contests' class='m-footer__link'>Upcoming Coding Contests</a></div><div class='l-footer__link'><a href='https://www.codechef.com/hostyourcontest' class='m-footer__link'>Host Your Contest</a></div><div class='l-footer__link'><a href='https://www.codechef.com/problemsetting' class='m-footer__link'>Problem Setting</a></div></div></div><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>Learning Resources</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='https://www.codechef.com/getting-started' class='m-footer__link'>Getting Started</a></div><div class='l-footer__link'><a href='https://www.codechef.com/practice' class='m-footer__link'>Practice Problems</a></div><div class='l-footer__link'><a href='https://discuss.codechef.com' class='m-footer__link'>CodeChef Discuss</a></div><div class='l-footer__link'><a href='/wiki/faq' class='m-footer__link'>FAQ's</a></div></div></div><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>More</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='https://business.codechef.com' class='m-footer__link'>CodeChef For Business</a></div><div class='l-footer__link'><a href='https://www.codechef.com/contactus' class='m-footer__link'>Contact Us</a></div><div class='l-footer__link'><a href='https://www.codechef.com/codeofconduct' class='m-footer__link'>Code Of Conduct</a></div><div class='l-footer__link'><a href='https://www.codechef.com/rankings' class='m-footer__link'>User Ranklist</a></div></div></div><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>Usage Policy</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='https://www.codechef.com/privacy-policy' class='m-footer__link'>Privacy policy</a></div><div class='l-footer__link'><a href='https://www.codechef.com/terms' class='m-footer__link'>Terms</a></div></div></div></div>
+            </div>
+            <div class="l-footer__social">
+                <div class="m-footer__social">
+                    <div class="l-footer__site">
+                        <a href="https://www.codechef.com" class="m-footer__site is-link-hovered ">www.codechef.com</a>
+                    </div>
+                    <div class="l-footer__follow-sec">
+                        <div class="l-footer__follow">
+                            <span class="m-footer__follow">Follow Us</span>
+                        </div>
+                        <div class='l-footer__icons'><a class='m-social i-youtube' href='//youtube.com/c/codechef1'></a><a class='m-social i-telegram' href='//t.me/learncpwithcodechef'></a><a class='m-social i-facebook' href='//facebook.com/CodeChef'></a><a class='m-social i-instagram' href='//instagram.com/codechef'></a><a class='m-social i-twitter' href='//twitter.com/codechef'></a><a class='m-social i-medium' href='//medium.com/codechef-official'></a><a class='m-social i-quora' href='//quora.com/topic/CodeChef'></a><a class='m-social i-linkedin' href='//linkedin.com/company/codechef'></a></div>
+                    </div>
+                </div>
+           </div>
+        </footer><script id="_webengage_script_tag" type="text/javascript">
+    var webengage;
+    !function (w, e, b, n, g) {
+        function o(e, t) {
+            e[t[t.length - 1]] = function () {
+                r.__queue.push([t.join("."),
+                    arguments])
+            }
+        }
+
+        var i, s, r = w[b], z = " ", l = "init options track screen onReady".split(z),
+            a = "feedback survey notification".split(z), c = "options render clear abort".split(z),
+            p = "Open Close Submit Complete View Click".split(z), u = "identify login logout setAttribute".split(z);
+        if (!r || !r.__v) {
+            for (w[b] = r = {__queue: [], __v: "6.0", user: {}}, i = 0; i < l.length; i++) o(r, [l[i]]);
+            for (i = 0; i < a.length; i++) {
+                for (r[a[i]] = {}, s = 0; s < c.length; s++) o(r[a[i]], [a[i], c[s]]);
+                for (s = 0; s < p.length; s++) o(r[a[i]], [a[i], "on" + p[s]])
+            }
+            for (i = 0; i < u.length; i++) o(r.user, ["user", u[i]]);
+            setTimeout(function () {
+                var f = e.createElement("script"), d = e.getElementById("_webengage_script_tag");
+                f.type = "text/javascript", f.async = !0, f.src = ("https:" == e.location.protocol ? "https://ssl.widgets.webengage.com" : "http://cdn.widgets.webengage.com") + "/js/webengage-min-v-6.0.js", d.parentNode.insertBefore(f, d)
+            })
+        }
+    }(window, document, "webengage");
+    webengage.init("~7168057d");
+</script><script type="text/javascript">
+            _linkedin_data_partner_id = "93463";
+            </script><script type="text/javascript">
+            (function(){var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript";b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);})();
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none;" alt=""
+                src="https://dc.ads.linkedin.com/collect/?pid=93463&fmt=gif" />
+        </noscript><div id='gdpr-cookie-notif' class='global--announcement' style='display: none;'>
+                <div class='global--announcement__content'>
+                    <p>
+                        We use cookies to improve your experience and for analytical purposes.
+                        Read our <a href='https://www.codechef.com/privacy-policy'>Privacy Policy</a>
+                        and <a href='https://www.codechef.com/terms'>Terms</a> to know more.
+                        You consent to our cookies if you continue to use our website.
+                    </p>
+                </div>
+                <div class='global--announcement__action'>
+                    <button id='gdpr-i-love-cookies' class='button grey tiny'>Okay</button>
+                </div>
+            </div></body>
+</html>
